@@ -1,0 +1,73 @@
+/**
+ * OA7 Chapter Meetings — default front-end styles.
+ *
+ * Intentionally low-specificity and class-driven so themes / Elementor custom CSS
+ * can override colors, spacing, and typography without !important.
+ */
+
+.oa7cm {
+	margin: 0 0 1.5em;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.oa7cm-heading {
+	margin: 0 0 0.6em;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.oa7cm-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.oa7cm-row {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15em;
+	padding: 0.75em 0.9em;
+	margin: 0 0 0.6em;
+	border: 1px solid #e2e2e2;
+	border-left: 4px solid var(--oa7cm-accent, #2b6cb0);
+	border-radius: 4px;
+	background: #fafafa;
+}
+
+.oa7cm-row:last-child {
+	margin-bottom: 0;
+}
+
+.oa7cm-date {
+	font-weight: 600;
+}
+
+.oa7cm-time {
+	font-weight: 500;
+}
+
+.oa7cm-location {
+	color: #555;
+}
+
+/* Single "Next Chapter Meeting" presentation. */
+.oa7cm--single .oa7cm-row {
+	background: #f4f8fc;
+}
+
+.oa7cm-note {
+	margin: 0.5em 0 0;
+	font-size: 0.85em;
+	font-style: italic;
+	color: #777;
+}
+
+.oa7cm-empty {
+	margin: 0;
+	padding: 0.75em 0.9em;
+	border: 1px dashed #ccc;
+	border-radius: 4px;
+	color: #666;
+	font-style: italic;
+}

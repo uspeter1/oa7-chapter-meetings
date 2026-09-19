@@ -1,0 +1,16 @@
+# Build artifact — produced from this folder for the WP admin uploader.
+# Attach it to a GitHub Release rather than committing it.
+*.zip
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Never commit real credentials or a local WP install
+wp-config.php
+*.local.php
+.env
