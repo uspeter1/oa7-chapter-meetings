@@ -114,8 +114,10 @@ these classes: `.oa7cm`, `.oa7cm--single`, `.oa7cm-heading`, `.oa7cm-list`, `.oa
 
 ## How it stays current
 
-- Events for the next **90 days** are fetched and cached for **6 hours** (WordPress
-  transient), refreshed automatically by WP-Cron and on demand by the button.
+- Events from **now forward 365 days** are fetched and cached for **6 hours** (WordPress
+  transient), refreshed automatically by WP-Cron and on demand by the button. The window
+  is forward-only — past events are never fetched, so nothing that has already happened
+  can appear in the widget.
 - Recurring monthly meetings are expanded to individual instances, so "next meeting"
   always rolls forward on its own — no manual date upkeep.
 - If a fetch fails (bad key, quota, network), the last good data keeps serving and the
