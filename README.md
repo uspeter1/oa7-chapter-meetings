@@ -125,9 +125,9 @@ these classes: `.oa7cm`, `.oa7cm--single`, `.oa7cm-heading`, `.oa7cm-list`, `.oa
 
 ## Admin health checks
 
-- **Last matched event** per chapter, with a per-chapter ⚠ warning if a regex has matched
-  nothing for longer than the configurable **stale-match threshold** (default 45 days) —
-  this usually means the regex no longer matches actual event titles.
+- **Last matched event** per chapter, with a per-chapter ⚠ warning when a chapter's regex
+  matches no event in the fetched window. It is a prompt to check the pattern — it usually
+  means the regex no longer matches the event titles actually on the calendar.
 - A separate **feed-wide warning** appears if the cache hasn't refreshed successfully in
   over 24 hours (the whole API connection should be checked).
 
